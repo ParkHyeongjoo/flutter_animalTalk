@@ -1,5 +1,5 @@
 import 'package:animal_talk/bloc/main_bloc.dart';
-import 'package:animal_talk/res/colors.dart';
+import 'package:animal_talk/base/colors.dart';
 import 'package:animal_talk/screen/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -9,7 +9,7 @@ void main() {
     MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        scaffoldBackgroundColor: mainColor
+        scaffoldBackgroundColor: KColors.primaryColor
       ),
       home: BlocProvider<MainBloc>(
         create: (BuildContext context) => MainBloc(),

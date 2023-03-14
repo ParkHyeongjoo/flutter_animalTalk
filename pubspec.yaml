@@ -37,6 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_native_splash: ^2.2.19
   flutter_bloc: ^8.1.2
+  get:
 
 dev_dependencies:
   flutter_test:
@@ -77,7 +78,24 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
+  fonts:
+    - family: parisienne
+      fonts:
+        - asset: assets/fonts/Parisienne-Regular.ttf
+
+    - family: sunflower
+      fonts:
+        - asset: assets/fonts/Sunflower-Light.ttf
+        - asset: assets/fonts/Sunflower-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Sunflower-Bold.ttf
+          weight: 700
+
+    - family: fredoka
+      fonts:
+        - asset: assets/fonts/FredokaOne-Regular.ttf
+
+
   #   - family: Schyler
   #     fonts:
   #       - asset: fonts/Schyler-Regular.ttf
